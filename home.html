@@ -1,0 +1,88 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<title>Illegal Phishing Links</title>
+<style type="text/css">
+P { 
+	font-family:'Brush Script MT', cursive;
+	text-indent:3em;
+}
+</style>
+</head>
+</head>
+<body>
+<div class="container-fluid">
+
+<div class="row">
+<div class="col-md-12">
+	<div class="row"><div class="col" style="text-align:center"><img src="res/header.png"></div></div>
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item disabled">
+      <a class="nav-link" href="/">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="https://github.com/IllegalPhishing">Github</a>
+    </li>
+    <li class="nav-item disabled">
+      <a class="nav-link" href="/about">About</a>
+    </li>
+    <li class="nav-item disabled">
+      <a class="nav-link" href="/contact">Contact / Report Abuse</a>
+    </li>
+  </ul>
+</nav>
+
+<div class="row" style="padding-top:3em;">
+<div class="col-md-6 offset-md-3">
+
+<div class="card">
+<div class="card-body">
+<h3 class="card-title" style="text-align:center;">Submit URL</h3>
+<form action="/submit" method="POST">
+<div class="input-group input-group-lg">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-lg">URL</span>
+  </div>
+  <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" name="{URL-INPUT}" placeholder="http://www.google.com/">
+</div>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+	  <select id="inputState" class="form-control" name="{SITE-INPUT}">
+	  <option selected value="illegalphishing.link">https://illegalphishing.link/</option>
+	  <option selected value="malwaredownload.link">https://malwaredownload.link/</option>
+	  <option selected value="ghey.link">https://ghey.link/</option>
+      </select>
+  </div>
+  <input type="text" class="form-control" name="{CUSTOM-INPUT}" aria-describedby="basic-addon3" placeholder="YourCustomURL (Leave Blank For Random)">
+</div>
+<div class="form-group row">
+  <div class="col-md-3"></div>
+  <div class="col-md-3"></div>
+  <div class="col-md-3">
+    <input id="date" class="form-control" type="date" value="" name="{DATE-INPUT}">
+  </div>
+  <div class="col-md-3">
+    <input class="form-control" type="time" value="" name="{TIME-INPUT}">
+  </div>
+</div>
+<div class="row"><div class="col" style="text-align:right;"><button type="submit" value="{SUBMIT}" class="btn btn-primary">SUBMIT</button></div></div>
+</form>
+</div>
+</div>
+
+</div>
+</div>
+
+<footer class="page-footer font-small pt-4">
+<div class="container">
+<div class="footer-copyright text-center py-1">&copy; 2020 Illegal Phishing Link</div>
+</div>
+</footer>
+
+</div>
+</div>
+
+</div>
+</body>
+</html>
